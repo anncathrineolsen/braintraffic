@@ -1,0 +1,211 @@
+.site {
+        color: $font-color;
+        max-width: 1160px;
+        margin-left: $auto;
+        margin-right: $auto;
+    }
+    .site-header{
+        display: $flex;
+        justify-content: $space;
+        flex-direction: $column;
+    }
+    .site-branding {
+        width: 30%;
+        margin-top: $margin;
+        margin-right: $auto;
+        margin-left: $margin;
+    }
+    .main-navigation{
+        display: $flex;
+        flex-direction: $column;
+        margin-right: $margin;
+        .menu-toggle {
+            background: $none;
+            border: $none;
+            position: absolute;
+            top: 15px;
+            right: 0;
+        }
+       a {
+            margin-left: $margin-30;
+           color: $font-color !important;
+           text-decoration: $none; 
+           font-size: 19px;
+           font-weight: normal;
+           &:hover {
+               text-decoration: $underline; 
+           }
+        }
+    }
+
+.bytplads {
+        order: 1;
+    }
+.order {
+    order: -1;
+    text-align: left;
+}
+
+h2, p{
+text-align: $alignment;
+}
+.tekst{
+    text-align: $alignment;  
+}
+p {
+    font-size: 18px;
+}
+h2 {
+    font-size: $margin-30;
+}
+h1{
+    text-align: $alignment;
+    margin-left: $px-90;
+    margin-right: $px-90;
+    font-size: 45px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.ekstrah1 {
+    text-align: $alignment;
+    margin-left: $px-90;
+    margin-right: $px-90;
+    font-size: 35px;
+    margin-top: 40px;
+    margin-bottom: $margin-20;
+}
+.h1-contact{
+    margin-bottom: -10px;
+    text-align: unset;
+    margin-left: $margin;
+}
+a {
+    text-decoration: $underline;
+    color: $a-color;
+    font-weight: 600;
+    &:visited {
+    color: $a-color;
+}
+    &:hover {
+    color:$a-color; 
+    text-decoration: $none;
+}
+}
+.clients {
+    display: $flex;
+    align-items:$alignment;
+    padding-right: $px-90;
+    padding-left: 50px;
+    padding-top: $margin-30;
+
+    }
+    .nytbillede{
+        padding-right: $margin-20;
+        padding-left: $margin-20;
+    }
+
+//Form
+input[type=text], select {
+    width: 100%;
+    padding: 12px $margin-20;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(247, 247, 247);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 20%;
+    background-color: $a-color;
+    font-size: $margin-20;
+    color: white;
+    padding: 14px $margin-20;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-top: $margin-20;
+    padding-bottom: $margin-20;
+  }
+  
+  .form {
+    border-radius: 5px;
+    padding: $margin-20;
+  }
+  .alt-form{
+      margin-left: $margin-20;
+  }
+  .robot{
+     margin-left: -5px;
+      margin-top: -30px;
+  }
+  //footer
+  .main-footer{
+      display: $flex;
+    justify-content: $space;
+    line-height: 200%;
+    flex-direction: $column;
+    margin-left: 30px;
+    font-size: 14px;
+}
+.footer-copy{
+    display: $flex;
+    align-items: $alignment;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+
+@media screen and(min-width: 600px) {
+        .site-header{
+            flex-direction: $row;
+        .main-navigation{
+            flex-direction: $row;
+            align-items: $alignment;
+            justify-content: flex-end;
+            }
+        }
+        .bytplads {
+            order: -1;
+        }
+        h2, p {
+            text-align: left;
+            padding-left: $margin;
+        }
+        .order {
+            order: 1;
+            padding-top: 80px;
+        }
+    
+    }
+
+    @media screen and(min-width: 990px) {
+        .main-footer {
+            display: $flex;
+            align-items: $alignment;
+            font-size: 14px;
+            justify-content: $space;
+            padding-right: $margin-20;
+            margin-left: $margin-30;
+            margin-right: $margin-30;
+            flex-direction: $row;  
+        }
+        .footer-copy{
+          display: $flex;
+          align-items: $alignment;
+          font-size: 14px;
+          padding-top: 5px;
+        }
+        .clients {
+            display: $flex;
+            align-items:$alignment;
+            padding-right: $px-90;
+            padding-left: 50px;
+            padding-top: $margin-30;
+            }
+            .nytbillede{
+                padding-right: $margin-20;
+                padding-left: $margin-20;
+            }
+    }
